@@ -3,13 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>M.C.A. Department</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #83d8ff; /* Light Blue background */
+            color: #333; /* Dark Gray text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #40505f; /* Blue header background */
+            color: rgb(209, 13, 13);
+            text-align: center;
+            position: fixed;
+            padding: 0em;
+            top: 0%;
+            width: 100%;
+            
+        }
+
+        footer {
+            background-color: #333; /* Dark Gray footer background */
+            color: white;
+            text-align: center;
+            padding: 0.5em;
+            position:relative;
+            bottom: 0;
+            width: 100%;
+        }
+        section {
+            margin: 20px;
+            
+        }
+
+       
+
+        h1 {
+            color: #1e90ff; /* Dodger Blue */
+        }
+        h3 {
+            color: white; /* Dodger Blue */
+        }
+
+        h2 {
+            color: #00ac48; /* Emerald Green */
+            text-decoration: underline;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 5px;
+            margin-bottom: 5px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        u {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            height:180px;
+            width: 180px;
+            display:block;
+            margin: 20px auto;
+            border: 2px solid #0066cc; /* Blue border around image */
+            border-radius:180px;
+            
+        }
+
+        a {
+            color: #cc0000; /* Red link color */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .highlight-italic {
+            font-style: italic;
+            color: #e74c3c; /* Alizarin Crimson */
+        }
+
+        .highlight-underline {
+            text-decoration: underline;
+            color: #3498db; /* Peter River Blue */
+        }
+
+        .highlight-font1 {
+            font-family: 'Courier New', monospace;
+            color: #2c3e50; /* Midnight Blue */
+        }
+
+        .highlight-font2 {
+            font-family: 'Georgia', serif;
+            color: #e67e22; /* Carrot Orange */
+        }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 45px;
+            }
+
+        #myBtn:hover {
+             background-color: #555;
+        }
+    </style>
 </head>
 <body>
-    <h3>Hey this is tag</h3>
-    <h2>55</h2>
-    <h3>s</h3>
-    <h1>habibi</h1>
-    <img src="www.iul.ac.in">
+
+    <header>
+        <h1>Computer.Application. Department</h1>
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <section style="margin-top: 2.5cm;">
+        <h2>Image and Link</h2>
+        <a href="https://www.iul.ac.in/" target="_blank">
+            <img src="https://www.iul.ac.in/img/logo_circle.PNG" alt="I.U.L.Image">
+        </a>
+    </section>
+    <section>
+
+    <h1><span class="highlight-italic">Welcome</span> to the <span class="highlight-underline">Department of Computer Application</span></h1>
+
+    <p>At our <span class="highlight-font1">innovative</span> and <span class="highlight-font2">dynamic</span> department, we are committed to providing <span class="highlight-italic">excellent</span> education and fostering a passion for <span class="highlight-underline">technology</span>.</p>
+
+    <h2>Key Features:</h2>
+
+    <ul>
+        <li><span class="highlight-font1">Cutting-edge Curriculum:</span> Our curriculum is designed to stay ahead of industry trends and technological advancements.</li>
+        <li><span class="highlight-font2">Dedicated Faculty:</span> Our experienced faculty members are passionate about mentoring students and promoting a culture of <span class="highlight-italic">innovation</span>.</li>
+        <li><span class="highlight-underline">State-of-the-Art Labs:</span> Equipped with the latest technology, our labs provide hands-on experience for practical learning.</li>
+        <li><span class="highlight-italic">Research Opportunities:</span> Students have the chance to engage in <span class="highlight-font1">groundbreaking</span> research projects and contribute to the <span class="highlight-font2">academic community</span>.</li>
+        <li><span class="highlight-underline">Career Guidance:</span> We offer comprehensive career guidance and <span class="highlight-font1">placement assistance</span> to help students succeed in their professional endeavors.</li>
+    </ul>
+
+    <p>Explore the endless possibilities that our department has to offer and join us in shaping the future of <span class="highlight-font2">computing</span>!</p>
+</section>
+
+    <section>
+        <h2>Key Technologies:</h2>
+        <ul>
+            <li>  <a href="https://en.wikipedia.org/wiki/Wi-Fi" target="_blank"> <strong>Wi-Fi</strong>: </a> Wireless technology for networking</li>
+            <li>  <a href="https://en.wikipedia.org/wiki/Local_area_network" target="_blank"> <strong>LAN</strong>: </a> Local Area Network for efficient data transfer</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Our Mission:</h2>
+        <p>Our mission is to empower students with the knowledge and skills required to excel in the dynamic field of computer applications.</p>
+    </section>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+    
+    <footer>
+        <a href=" https://www.linkedin.com/in/mohmmad-shahnwaz-532ab1281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"><h3>SHAHNAWAZ</h3></a> 
+        <h3>Contact Me</h3>
+         <a href="mailto:shahnwazmohmmad@gmail.com" target="_blank"><p id="email">shahnwazmohmmad@gmail.com</p></a>
+         
+         <a href="https://wa.me/+91_9506782049?text=Hello" target="_blank"><p id="contact">+919506782049</p> </a>
+    </footer>
+
 </body>
 </html>
