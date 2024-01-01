@@ -16,7 +16,7 @@ body {
   height: 100vh;
 }
 
-.msg {
+.msg1 {
   width: 100%;
   font-family: "Bilbo Swash Caps", cursive;
   font-size: 100px;
@@ -29,6 +29,19 @@ body {
   animation: message 2s ease-in-out 6s forwards;
 }
 
+.msg2 {
+  width: 100%;
+  font-family: "Arial", cursive;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #fff700;
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  
+  opacity: 0;
+  animation: message 2s ease-in-out 6s forwards;
+}
 @keyframes message {
   0% {
     opacity: 0;
